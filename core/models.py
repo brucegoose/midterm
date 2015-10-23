@@ -6,3 +6,6 @@ class Question(models.Model):
   email = models.CharField(max_length=30)
   message = models.TextField(max_length=300)
   created_at = models.DateTimeField(auto_now_add=True)
+
+  def __unicode__(self):
+    return self.name
