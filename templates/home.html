@@ -1,8 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="page-header">
+  <h1>Andrew Brucella's Personal Wesbite</h1>
+</div>
 <div class="jumbotron">
-  <h1>Welcome to Andrew's Personal Website</h1>
-  <p>I want to hear from you, contact me!</p>
+  <h1>Welcome to my wesbite</h1>
+  <p>Thanks for visiting! Feel free to browse my site to learn more about who I am, or contact me if you would like. Enjoy!</p>
   <p><a href="{% url 'question_create' %}" class="btn btn-lg btn-primary">Contact Me</a></p>
+  <form action="https://www.facebook.com/?_rdr=p"> <input type="submit" value="Facebook"> </form>
+  <form action="https://www.linkedin.com/profile/view?id=AAIAABNF32sBOSms9r2SOod2NB0Z4erkisgeUNQ&trk=nav_responsive_tab_profile"> <input type="submit" value="LinkdIn"> </form>
 </div>
 {% endblock %}
