@@ -1,14 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
 <div class="page-header">
-  <h1 align="center"><b>Andrew Brucella's Personal Wesbite</b></h1>
+  <h1 align="center"><font color="maroon"><font size="550"><b>Andrew Brucella's Personal Wesbite</b></font></h1>
 </div>
-<div class="jumbotron">
-  <h1><font color="green">Welcome To My Wesbite!</font></h1>
+<div class="panel panel-primary" align="center"><font color="black"><font size="30"><div class="jumbotron" class="panel panel-primary">
+  <h1><font color="black">Welcome To My Wesbite!</font></h1>
   <p>Thanks for visiting! Feel free to browse my site to learn more about who I am, or contact me if you would like. Enjoy!</p>
   <p><a href="{% url 'question_create' %}" class="btn btn-lg btn-primary">Contact Me</a>
-    <a href="{% url 'jumbo' %}" class="btn btn-lg btn-danger">About Me</a></p>
-  <p><a href="myfile.htm"><img src="static/andrew/andrew.jpg" align=right height="550" width="500"></a></p>
-  <p><a href="myfile.htm"><img src="static/image/me.jpg" align=middle height="550" width="500"></a></p>
+     <a href="{% url 'jumbo' %}" class="btn btn-lg btn-danger">About Me</a>
+     <a href="https://www.facebook.com/andrew.brucella" class="btn btn-lg btn-warning">Facebook</a>
+     <a href="https://www.linkedin.com/profile/view?id=AAIAABNF32sBOSms9r2SOod2NB0Z4erkisgeUNQ&trk=nav_responsive_tab_profile" class="btn btn-lg btn-success">LinkedIn</a> </p>
+  <p><a href="myfile.htm"><img src="static/andrew/andrew.jpg" align=right height="570" width="500"></a></p>
+  <p><a href="myfile.htm"><img src="static/image/me.jpg" align=middle height="570" width="500"></a></p>
 </div>
+
 {% endblock %}
