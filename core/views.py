@@ -15,3 +15,9 @@ class QuestionCreateView(CreateView):
 
 class Success(TemplateView):
   template_name = "success.html"
+
+class Jumbo(TemplateView):
+  template_name = "jumbo.html"
+
+class Rick(TemplateView):
+  template_name = "rick.html"
